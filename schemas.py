@@ -1,6 +1,8 @@
 from pydantic import BaseModel, Field
 from typing import Optional  
 
+# create a user and task schemas 
+
 class UserCreate(BaseModel): 
     name: str = Field(..., min_length= 2, max_length = 50, description = "Username must be 2-50 characters long")
 

@@ -4,6 +4,7 @@ from database import Base # import base from database.py
 # create a users table
 class User(Base): 
     __tablename__ = "users" 
+    __table_args__ = {'extend_existing': True} 
 
     id = Column(Integer, primary_key = True, index = True) 
     name = Column(String, nullable = False) 
@@ -11,7 +12,7 @@ class User(Base):
 
 # create a tasks table 
 class Task(Base):
-    __tablename__ = "users" 
+    __tablename__ = "tasks" 
 
     id = Column(Integer, primary_key = True, index = True) 
     title = Column(String, nullable = False) 
