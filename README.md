@@ -23,29 +23,36 @@ This project demonstrates backend development skills and is suitable as a portfo
 
 ```bash 
 git clone https://github.com/Karel773/fastapi-portfolio.git 
-cd fastapi-portfolio```
+cd fastapi-portfolio
+```
 
 2. Create and activate a virtual environment: 
 
 # Windows 
+```
 python -m venv venv 
 venv\Scripts\activate 
+```
 
-# macOS / Linux 
+# macOS / Linux
+``` 
 python -m venv venv 
 source venv/bin/activate 
+```
 
 3. Install required packages: 
 ```bash
-pip install -r requirements.txt``` 
+pip install -r requirements.txt
+```
 
 4. Run the server: 
 ```bash 
-uvicorn main:app --reload``` 
+uvicorn main:app --reload
+```
 
 5. Open the API documentation in your browser: 
 
-http://127.0.0.1:8000/docs
+> http://127.0.0.1:8000/docs
 
 --- 
 
