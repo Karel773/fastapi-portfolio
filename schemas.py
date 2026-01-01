@@ -12,7 +12,7 @@ class UserPublic(BaseModel):
     is_active: bool 
 
     class Config:
-        orm_mode = True 
+        from_attributes = True 
 
 class TaskCreate(BaseModel):
     title: str = Field(..., min_length = 1, max_length = 100) 
@@ -27,4 +27,4 @@ class TaskPublic(BaseModel):
     user_id: int 
 
     class Config:
-        orm_mode = True 
+        from_attributes = True 
