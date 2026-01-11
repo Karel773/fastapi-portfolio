@@ -94,9 +94,9 @@ uvicorn main:app --reload
 - Status codes properly set (201 Created, 204 No Content, 404 Not Found) 
 - Endpoints organized with FastAPI routers 
 - Swagger UI documentation available at /docs 
+- JWT authentication for secure user login and task access
 
 ## Future Improvements 
-- Add authentication and authorization (JWT) 
 - Switch to PostgreSQL for production 
 - Add relationships between users and tasks with foreign key constraints 
 - Implement more advanced query filtering and pagination 

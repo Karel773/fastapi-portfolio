@@ -9,7 +9,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title = "Task Manager API",
     description = "Simple backend API for managing users and their tasks",
-    version = "1.0.0"
+    version = "1.1.0"
 ) 
 
 # routers register 

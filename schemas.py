@@ -4,7 +4,8 @@ from typing import Optional
 # create a user and task schemas 
 
 class UserCreate(BaseModel): 
-    name: str = Field(..., min_length= 2, max_length = 50, description = "Username must be 2-50 characters long")
+    name: str = Field(..., min_length= 2, max_length = 50, description = "Username must be 2-50 characters long") 
+    password: str = Field(..., min_length = 6, max_length = 72) 
 
 class UserPublic(BaseModel):
     id: int 
@@ -28,3 +29,10 @@ class TaskPublic(BaseModel):
 
     class Config:
         from_attributes = True 
+
+class Token(BaseModel):
+    access_token: str 
+    token_type: str 
+
+class TokenData(BaseModel):
+    user_id: Optional[int] = None
